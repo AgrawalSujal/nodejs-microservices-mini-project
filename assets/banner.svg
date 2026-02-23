@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 40px/1.2 'Segoe UI', Roboto, Arial; fill: white }
+      .subtitle { font: 400 18px/1.2 'Segoe UI', Roboto, Arial; fill: rgba(255,255,255,0.9) }
+    </style>
+  </defs>
+  <rect width="1200" height="240" rx="8" fill="url(#g)" />
+  <g transform="translate(40,60)">
+    <text class="title">Node.js Microservices Demo</text>
+    <text class="subtitle" y="48">User · Task · Notification — Docker, MongoDB, RabbitMQ</text>
+  </g>
+</svg>

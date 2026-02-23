@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <style>
+    .box { fill:#fff; stroke:#374151; stroke-width:1.5; rx:8 }
+    .title{ font:700 16px/1 'Segoe UI', Roboto, Arial; fill:#111827 }
+    .small{ font:400 12px/1 'Segoe UI', Roboto, Arial; fill:#374151 }
+    .arrow{ stroke:#4B5563; stroke-width:1.6; fill:none; marker-end: url(#arrow) }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4B5563" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="320" rx="6" fill="#F8FAFC" />
+
+  <!-- Services -->
+  <g transform="translate(40,30)">
+    <rect class="box" width="200" height="80" />
+    <text class="title" x="16" y="28">user-service</text>
+    <text class="small" x="16" y="48">REST API (3000)</text>
+  </g>
+
+  <g transform="translate(340,30)">
+    <rect class="box" width="200" height="80" />
+    <text class="title" x="16" y="28">task-service</text>
+    <text class="small" x="16" y="48">REST API (3001) — publishes events</text>
+  </g>
+
+  <g transform="translate(640,30)">
+    <rect class="box" width="200" height="80" />
+    <text class="title" x="16" y="28">notification-service</text>
+    <text class="small" x="16" y="48">Consumer (3002)</text>
+  </g>
+
+  <!-- Messaging -->
+  <g transform="translate(260,150)">
+    <rect class="box" width="140" height="60" />
+    <text class="title" x="12" y="28">RabbitMQ</text>
+    <text class="small" x="12" y="44">AMQP broker</text>
+  </g>
+
+  <!-- Database -->
+  <g transform="translate(520,150)">
+    <rect class="box" width="140" height="60" />
+    <text class="title" x="12" y="28">MongoDB</text>
+    <text class="small" x="12" y="44">Persistent storage</text>
+  </g>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M240 70 L340 70" />
+  <path class="arrow" d="M540 70 L640 70" />
+
+  <path class="arrow" d="M440 110 L440 150" />
+  <path class="arrow" d="M440 210 L440 210 L380 210" />
+
+  <path class="arrow" d="M560 110 L560 150" />
+  <path class="arrow" d="M560 210 L560 210 L600 210" />
+
+  <!-- Labels -->
+  <text class="small" x="300" y="68">HTTP</text>
+  <text class="small" x="500" y="68">HTTP</text>
+  <text class="small" x="460" y="160">AMQP (task_created)</text>
+  <text class="small" x="620" y="160">MongoDB connections</text>
+</svg>
